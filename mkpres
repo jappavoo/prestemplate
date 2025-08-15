@@ -1,0 +1,61 @@
+#!/bin/bash
+#set -x
+typeset -r scriptdir=$(dirname $(realpath $0))
+typeset -a -r files=( Makefile diox mknb.py )
+typeset -r prespath="$1"
+typeset -r templatename=${2:-basicwhite}
+typeset -r name="$(basename $prespath)"
+typeset -r template="${scriptdir}/${templatename}.drawio"
+
+typeset -i rc=0
+
+function usage()
+{
+    local t
+    cat > /dev/stderr <<EOF
+ USAGE: mkpres <path> [template]
+    This script will create the path and populate it with contents for creating a jupyterlab RISE presentation whose
+    source is a drawio file. Vallid templates are:
+EOF
+    for t in ${scriptdir}/*.drawio; do
+	t=$(basename "$t")
+	echo -e "\t\t${t%.drawio} (${scriptdir}/${t})"
+    done
+}
+
+[[ -z $prespath ]] && {
+    usage
+    exit 0
+}
+
+[[ -a $prespath ]] && {
+    echo "ERROR: $prepath already exists" >/dev/stderr
+    usage
+    exit -1
+}
+
+[[ ! -a $template ]] && {
+    echo "ERROR: $templatename is not valid" > /dev/stderr
+    usage
+    exit -1
+}
+    
+! mkdir -p $prespath && {
+    echo "ERROR: failed to mkdir $prespath" > /dev/stderr
+    exit -1
+}
+
+
+for f in ${files[@]}; do
+    ! cp "${scriptdir}/$f" "${prespath}" &&  {
+	echo "ERROR: failed to copy ${scriptdir}/$f to $prespath" >/dev/stderr
+	rc=-1
+    }
+done
+
+! cp $template ${prespath}/${name}.drawio && {
+    echo "ERROR: failed to copy ${scriptdir}/${template}.drawio to ${prespath}/${pres}.drawio" >/dev/stderr
+    rc=-1
+}
+
+exit $rc
