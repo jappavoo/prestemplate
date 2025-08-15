@@ -1,0 +1,43 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6" pages="2">
+  <diagram name="Title" id="tndA3juTFIhTGiaQsKCo">
+    <mxGraphModel dx="2946" dy="2212" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="Presentation Title" tags="title" id="ht4OBbpa9grFInrD05oC-1">
+          <mxCell style="text;html=1;align=left;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontSize=116;fontStyle=1;movable=0;aspect=fixed;resizable=0;rotatable=0;" vertex="1" parent="1">
+            <mxGeometry x="95" y="203" width="1730" height="366" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;span style=&quot;font-size: 55px;&quot;&gt;Subtitle&lt;/span&gt;" tags="subtitle" id="ht4OBbpa9grFInrD05oC-2">
+          <mxCell style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;" vertex="1" parent="1">
+            <mxGeometry x="95" y="569" width="1730" height="150" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Author and Date" tags="author" id="ht4OBbpa9grFInrD05oC-3">
+          <mxCell style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=36;fontStyle=1;movable=0;resizable=0;rotatable=0;" vertex="1" parent="1">
+            <mxGeometry x="95" y="934" width="1730" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="anueSxENMuyn0aaFwrIq" name="Title &amp; Bullets">
+    <mxGraphModel dx="3273" dy="2458" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="Slide Title" tags="title" id="NI6NocQBJbuXdd987u5K-1">
+          <mxCell style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=85;fontStyle=1;movable=0;resizable=0;rotatable=0;" vertex="1" parent="1">
+            <mxGeometry x="95" y="85" width="1730" height="113" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Slide Title" tags="subtitle" id="j-SV-b0gHZqG4BGtdskF-1">
+          <mxCell style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;rounded=0;fontSize=55;fontStyle=1;movable=0;resizable=0;rotatable=0;" vertex="1" parent="1">
+            <mxGeometry x="95" y="187" width="1730" height="74" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
