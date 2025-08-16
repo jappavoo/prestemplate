@@ -66,7 +66,7 @@ if [[ $DIOPAGE = 0 ]]; then
     $DIO --export --format xml --uncompressed -o /tmp/$$_$input.xml "$input" 2> /dev/null
     # Count how many pages based on <diagram element
     count=$(grep -o '<diagram' /tmp/$$_$input.xml | wc -l)
-    pages=$(seq 0 $(($count-1)) )
+    pages=$(seq 1 $(($count)) )
     rm /tmp/$$_$input.xml
 fi
 
